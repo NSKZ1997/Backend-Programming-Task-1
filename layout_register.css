@@ -1,0 +1,161 @@
+body{
+	font-family: sans-serif;
+	background-color: red;
+	background-size: 100% 100%
+}
+
+section{
+	height: 70vh;
+	border: 2px solid black;
+	justify-content: 'background.png';
+}
+
+title, h1{
+	position: relative;
+	font-size: 42px;
+	text-align: center;
+	color: gold;
+}
+
+input{
+	left: 30%;
+	width: 22%;
+	height: 30px;
+	width: 350px;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+label{
+	color: yellow;
+}
+
+select{
+	width: 10em;
+	height: 2em;
+	background: grey;
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+	font-size: 18px;
+	border: 0 !important;
+	line-height: 3em;
+}	
+
+.select::after{
+	content: '\25bc';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0 1em;
+	background: #34495e;
+	pointer-events: none;
+}
+
+.select:hover::after{
+	color:#31a3e4;
+}
+
+.select::after{
+	transition: .2s all ease;
+}
+
+option{
+	height: 30px;
+}
+
+.container{
+	position: relative;
+	display: block;
+	text-align: right;
+	right: 40%;
+}
+
+.container2{
+	position: absolute;
+	display: inline-block;
+	left: 65%;
+	top: 25%;
+	align-items: center;
+}
+
+label{
+	text-align: right;
+}
+
+#title-header{
+	top: -30px;
+}
+
+#soviet_flag{
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+
+
+.btn {
+	display: inline-block;
+	border: none;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.btn-lg {
+	padding: 20px 28px;
+	font-size: 36px;
+	border-radius: 8px;
+}
+
+.btn-sm{
+	padding: 5px 10px;
+	font-size: 12px;
+	border-radius: 3px;
+}
+
+.btn-success{
+	position: relative;
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+	top: 20px;
+	left: 40%;
+	width: 16%;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+	color: #fff;
+	background-color: #449d44;
+	border-color: #398439;
+}
+
+#to_search_button{
+	position: absolute;
+	left: 84%;
+	background-color: yellow;
+	width: 14%;
+	font-size: 22px;
+	height: 10%;
+	color: red;
+	border: 2px solid white;
+	border-radius: 25px 25px 25px 25px;
+	display: inline-block;
+	z-index: 100;
+}
+
+#success_message{
+	position: relative;
+	font-size: 24px;
+	color: white;
+	width: 100%;
+	text-align: center;
+}

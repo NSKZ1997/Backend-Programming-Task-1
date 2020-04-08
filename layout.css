@@ -1,0 +1,279 @@
+body{
+	font-family: sans-serif;
+	background-color: red;
+	background-size: 100% 100%
+}
+
+section{
+	height: 70vh;
+	border: 2px solid black;
+	justify-content: 'background.png';
+}
+
+select{
+	width: 200px;
+	height: 50px;
+}
+
+#soviet_flag{
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+#box{
+	position: relative;
+	display: inline-block;
+	font-size: 22px;
+	box-sizing: border-box;
+	transition: .5s;
+	background: #fff;
+	width: 400px;
+	height: 50px;
+	border: none;
+	padding: 0px 25px;
+	left: 60px;
+}
+
+#register{
+	position: absolute;
+	top: 2%;
+	left: 84%;
+	font-size: 150%;
+	background-color: orange;
+	border-radius: 25px 25px 25px 25px;
+	height: 8%;
+	width: 15%;
+}
+
+.wage{
+	top: 25%;
+	left: 34%;
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	box-sizing: border-box;
+	transition: .5s;
+	background: #fff;
+	width: 15%;
+	height: 50px;
+	top: 20px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px 5px 5px 5px;
+	float: center;
+}
+
+#maxwage{
+	left: 38%;
+}
+
+.search_results{
+	text-align: center;
+	margin: 10px auto;
+	color: red;
+}
+
+.user_entry{
+	position: relative;
+	color: white;
+	text-transform: capitalize;
+	top: 50px;
+	border-style: solid;
+	border-width: 0px 0px 2px 0px;
+	border-color: black;
+	margin-top: 20px;
+	padding: 30px 0px 30px 0px;
+}
+
+.user_entry_name, .user_entry_wages, .user_entry_skills, .user_entry_years, .user_entry_education{
+	position: relative;
+	top: 5px;
+	font-size: 16px;
+	display: inline-block;
+	width: 15%;
+}
+
+.user_entry_name{
+	overflow-wrap: break-word;
+	right: 8%;
+}
+
+.user_entry_skills{
+	overflow-wrap: normal;
+	right: 3%;
+}
+
+.user_entry_wages{
+	overflow-wrap: break-word;
+	left: 6%;
+}
+
+.user_entry_years{
+	font-size: 18px;
+	overflow-wrap: break-word;
+	left: 11%;
+}
+
+.user_entry_education{
+	overflow-wrap: break-word;
+	left: 12%;
+}
+
+.labels{
+	position: absolute;
+	color: white;
+	font-size: 24px;
+}
+
+#label_name, #entry_skills{
+	left: 10%;
+}
+
+#label_skills{
+	left: 26%;
+}
+
+#label_wages{
+	left: 50%;
+}
+
+#label_years{
+	left: 72%;
+}
+
+#label_education{
+	left: 87%;
+}
+
+.tag{
+	position: relative;
+	float: left;
+	width: max-content;
+	height: 30px;
+	font-size: 12px;
+	background: orange;
+	border-radius: 10px 10px 10px 10px;
+	flex-direction: row;
+  	flex-wrap: nowrap;
+	align-items: left;
+	position: relative;
+	text-align: right;
+	display: inline-block;
+	margin: 10px auto;
+	padding-left: 20px;
+}
+}
+.tag:hover {
+  opacity: 1;
+}
+.tag:before, .tag:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 15px;
+  width: 2px;
+  background-color: #333;
+}
+.tag:before {
+  transform: rotate(45deg);
+}
+.tag:after {
+  transform: rotate(-45deg);
+  }
+
+.btnadd{
+	position: relative;
+	border-radius: 0px 25px 25px 0;
+	width: 150px;
+	height: 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #ffc107;
+	font-size: 24px;
+	color: white;
+	left: 60px;
+}
+
+.btn_clear{
+	position: relative;
+	border-radius: 25px 25px 25px 25px;
+	width: 9%;
+	height: 8%;
+	font-size: 150%;
+	border: none;
+	outline: none;
+	background: grey;
+	color: white;
+	left: 70px;
+}
+
+.container, .container2{
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	display: flex;
+	width: 100%;
+}
+
+.container2{
+	height: 40%;
+}
+
+#tags-div{
+	justify-content: center;
+	float: right;
+	margin-right: 44%;
+}
+
+#title-header{
+	top: 0px;
+	float: right;
+	margin-right: 33%;
+	font-size: 50px;
+	color: gold;
+	font-family: Futura, Candara, Optima, sans-serif;
+	font-weight: bold;
+	margin-top: -10px;
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.btn-lg {
+	padding: 20px 28px;
+	font-size: 40px;
+	border-radius: 8px;
+}
+
+.btn-sm{
+	padding: 5px 10px;
+	font-size: 12px;
+	border-radius: 3px;
+}
+
+.btn-success{
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+	color: #fff;
+	background-color: #449d44;
+	border-color: #398439;
+}

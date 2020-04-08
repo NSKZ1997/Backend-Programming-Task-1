@@ -1,0 +1,43 @@
+<!---Search engine HTML code--->
+
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+	<title>Stable Matching Exercise</title>
+	<link href = "layout.css" rel = "stylesheet" type = "text/css">
+</head>
+<body>
+	<section id = "soviet_flag">
+	<button id = "register" class = "btn btn-success" onclick = "location.href='insert.html'">Register</button>
+		<h1 id = "title-header">Employee Finder 9001</h1>
+		<div id = "status"></div>
+		<div id = "tags-div"></div>
+		<div class = "container">
+			<input id = "box" placeholder = "Enter skills: ">
+			<button onclick = "Appendtags()" id = "button_1" class = "btnadd">Add</button>
+			<button onclick = "Cleartraits()" id = "button_2" class = "btn_clear">Clear</button>
+			<br>
+		</div>
+		<div>
+			<input type = "number" class = "wage" id = "minwage" placeholder = "Minimum wage ($/year)">
+			<input type = "number" class = "wage" id = "maxwage" placeholder = "Maximum wage ($/year)">
+		</div>
+		<div class = "container2">
+			<br>
+			<button onclick = "Search(document.getElementById('minwage').value, document.getElementById('maxwage').value)" id = "search_employees" class = "btn btn-success btn-lg">Search</button>
+		</div>
+	</section>
+	<section>
+		<div id = "labels">
+			<p id = "label_name" class = "labels"></p>
+			<p id = "label_skills" class = "labels"></p>
+			<p id = "label_wages" class = "labels"></p>
+			<p id = "label_years" class = "labels"></p>
+			<p id = "label_education" class = "labels"></p>
+		</div>
+		<div id = "search_results" class = "search_results"></div>
+	</section>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+	<script src = "website_code.js"></script>
+</body>
+</html>

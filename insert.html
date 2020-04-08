@@ -1,0 +1,45 @@
+<!---HTML code for registering new users--->
+
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+	<title>Register as a Worker</title>
+	<link href = "layout_register.css" rel = "stylesheet" type = "text/css">
+</head>
+<body>
+	<button id = "to_search_button" class = "btn" onclick = "location.href='index.html'">Find Employees</button>
+	<section id = "soviet_flag">
+		<h1 id = "title-header">Work Finder 9001</h1>
+		<div class = "container">
+			<label>Enter your full name:</label>
+			<input id = "name" placeholder = "Ex. Barack Obama"></input>
+		</div>
+		<div class = "container">
+			<label>What skills/work experience do you have?</label>
+			<input id = "skills" placeholder = "Ex. Driving, Cooking, Engineering"></input>
+		</div>
+		<div class = "container">
+			<label>How much are you willing to work for ($/year)?</label>
+			<input type = "number" id = "wage" placeholder = "Ex. 50000"></input>
+		</div>
+		<div class = "container">
+			<label>Your working experience (years): </label>
+			<input type = "number" id = "experience" placeholder = "Ex. 12"></input>
+		</div>
+		<div class = "container2">
+			<select id = "select-education" class = "select">
+				<option value = -1>Your Education</option>
+				<option value = 0>No Education</option>
+				<option value = 1>High School Degree</option>
+				<option value = 2>Bachelor's Degree</option>
+				<option value = 3>Master's Degree</option>
+				<option value = 4>PhD</option>
+			</select>
+		</div>
+	<button id = "register_button" class = "btn btn-success btn-lg">Sign Up</button>
+	</section>
+	<p id = "success_message"><p>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+	<script src = "register_code.js"></script>
+</body>
+</html>
